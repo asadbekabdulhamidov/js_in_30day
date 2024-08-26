@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --dark-color: #183153;
+  --bg-white: #ffffff;
+  --shadow-lg: 0 0 25px 3px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 25px;
+  font-family: var(--primary-font);
+  box-shadow: var(--shadow-lg);
+  /* box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.2); */
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.number {
+  font-size: 9rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.p-abs {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: var(--dark-color);
+  padding: 12px;
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-white);
+  cursor: pointer;
+  transition: all 0.75s ease;
+}
+
+.p-abs:hover {
+  background-color: var(--dark-color);
+  color: var(--bg-white);
+}
+
+.reset {
+  bottom: -25px;
+}
+
+.decrement {
+  left: -25px;
+}
+
+.increment {
+  right: -25px;
+}
+
+.p-abs svg {
+  font-size: 12px;
+}
