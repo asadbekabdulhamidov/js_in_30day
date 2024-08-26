@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  min-height: 130px;
+  position: relative;
+  font-family: var(--primary-font);
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 6px rgba(195, 198, 201, 0.2);
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.generated-button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  padding: 10px;
+
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: animation-btn 4s infinite linear;
+}
+
+@keyframes animation-btn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
