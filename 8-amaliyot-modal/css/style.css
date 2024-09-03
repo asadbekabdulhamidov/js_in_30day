@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-container {
+  width: 300px;
+  border-radius: 24px;
+  padding: 2rem 1.3rem;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+  font-family: var(--primary-font);
+  background-color: #ffffff;
+  transition: all 1s linear;
+  position: fixed;
+  z-index: 9999;
+}
+
+.modal-container svg {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  color: rgb(77, 76, 76);
+}
+
+.modal-body {
+  color: rgb(121, 120, 120);
+  font-family: var(--primary-font);
+  padding: 0 8px;
+}
+
+.modal-body h3 {
+  color: #242424;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.modal-body p {
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.p-abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: rgb(243, 241, 241);
+  color: #363535;
+  font-family: var(--primary-font);
+  border-style: none;
+  font-size: 16px;
+  padding: 8px 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: rgb(224, 223, 223);
+}
+
+.btn:active,
+.btn:focus {
+  box-shadow: 0 0 1px 5px rgba(182, 181, 181, 0.1);
+}
+
+.btn-danger {
+  color: #ffffff !important;
+  background-color: #ff0000 !important;
+}
+
+.btn-danger:hover {
+  background-color: #fd3838 !important;
+}
+
+.btn-danger:active,
+.btn-danger:focus {
+  background-color: #ff0000 !important;
+  box-shadow: 0 0 1px 5px rgb(238, 8, 8, 0.1) !important;
+}
+
+.btn-primary {
+  background-color: rgb(2, 122, 241);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: rgb(39, 147, 255);
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  box-shadow: 0 0 1px 5px rgb(32, 143, 255, 0.1) !important;
+  background-color: rgb(2, 122, 241);
+}
+
+.hidden {
+  display: none;
+}
