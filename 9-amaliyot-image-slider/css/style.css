@@ -1,0 +1,135 @@
+:root {
+  --gray-900: #001c40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.select-none {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 34px 12px rgba(195, 198, 201, 0.3);
+}
+
+.container .display {
+  width: 100%;
+  height: 77%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.container .display img {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  border-radius: 24px;
+}
+
+.container .img-slider {
+  width: calc(100% - 16px);
+  height: 23%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  display: -webkit-flex;
+  overflow: auto;
+  margin: 0 8px;
+  border-radius: 12px;
+}
+
+.next-and-prev {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.next-and-prev:hover {
+  background-color: var(--gray-900);
+  color: #ffffff;
+}
+
+.next-and-prev svg {
+  width: 24px;
+  height: 24px;
+  color: var(--gray-900);
+}
+
+.next-and-prev:hover svg {
+  color: #ffffff;
+}
+
+.next-and-prev.next {
+  top: calc(50% - 18px);
+  right: 15px;
+}
+
+.next-and-prev.prev {
+  top: calc(50% - 18px);
+  left: 15px;
+}
+
+.container .img-slider img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer;
+  border: none;
+  border: 4px solid white;
+  border-radius: 8px;
+  transition: all 1s linear;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 112, 255);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
