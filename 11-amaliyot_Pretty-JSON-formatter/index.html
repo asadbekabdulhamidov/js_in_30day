@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prettiy Json Formatter</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Pretty Json Formatter</h1>
+      <div class="input-json">
+        <textarea
+          class="json"
+          name="json"
+          id="inputJson"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="buttons my-2">
+        <button id="formatted" class="btn btn-success me-1">Formated</button>
+        <button id="minifed" class="btn btn-success ms-1">Minifed</button>
+      </div>
+      <div class="input-json">
+        <textarea
+          class="json"
+          name="json"
+          id="outputJson"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="copy"
+          class="svg-inline--fa fa-copy"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"
+          ></path>
+        </svg>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
