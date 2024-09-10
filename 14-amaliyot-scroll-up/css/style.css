@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.indicator {
+  position: relative;
+  height: 8px;
+  position: fixed;
+  top: 0;
+  width: 0;
+  left: -5px;
+  background: rgb(135, 19, 245);
+  border-radius: 4px;
+  z-index: 99999;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(135, 19, 245);
+  z-index: 99;
+}
+
+.banner {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-image: url("../assets/images/gabriel-beaudry-70rHtD11NNk-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  color: rgb(135, 19, 245);
+  font-weight: 500;
+  padding: 5rem;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+main .box {
+  text-align: justify;
+  margin: 2rem 5rem;
+}
+
+main .box h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.img-box {
+  width: 100%;
+  text-align: center;
+}
+
+.img-box img {
+  width: 800px;
+  height: 500px;
+  margin: 2rem auto;
+}
+
+@media (max-width: 910px) {
+  .img-box img {
+    width: 100%;
+    height: 250px;
+  }
+
+  main .box {
+    text-align: justify;
+    margin: 2rem 3rem;
+  }
+}
+
+/*  */
+
+#scrollTop {
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  color: rgb(135, 19, 245);
+  position: fixed;
+  bottom: 30rem;
+  right: 1.3rem;
+  z-index: 9999;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#scrollTop svg {
+  width: 40px;
+  height: 40px;
+  transform: rotate(-90deg);
+}
