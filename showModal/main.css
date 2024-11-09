@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Varela", sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./bmw.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.show-btn {
+  background-color: #474b4f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.show-btn:hover {
+  background-color: #3a3d40;
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  max-width: 600px;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  color: black;
+  font-size: 20px;
+}
+
+.modal-title {
+  margin-bottom: 15px;
+}
+
+/* overlay */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
